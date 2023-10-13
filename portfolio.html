@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Maggis</title>
+    <link rel="stylesheet" href="portfolio.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="MaggisLogo.jpg" alt="Maggis logo">
+    </header>
+
+
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#esittely">ESITTELY</a>
+            </li>
+            <li>
+                <a href="#portfolio">PORTFOLIO</a>
+            </li>
+            <li>
+                <a href="#yhteys">YHTEYDENOTTO</a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <section id="esittely" class="row">
+        <h1>ESITTELY</h1>
+
+        <div class="column">
+            <p>Tietojenkäsittelyn tradenomiopiskelija, Haaga-Helia ammattikorkeakoulusta.</p>
+        </div>
+
+        <div class="column">
+            <img src="MaaritMagga.jpg" alt="kuvassa Maarit Magga">
+        </div>
+    </section>
+
+
+
+    <section id="portfolio" class="row">
+        <h1>PORTFOLIO</h1>
+
+        <div class="column">
+            <p>WordPress-sivuston suunnittelu, toteutus ja sisällöntuotanto:
+                <a href="https://www.beautybeaivi.fi" target="blank">beautybeaivi.fi</a>
+            </p>
+        </div>
+
+        <div class="column">
+            <a href="https://www.beautybeaivi.fi" target="blank">
+                <img src="bbwwwkuva.png" alt="kuvakaappaus verkkosivustolta"></a>
+        </div>
+    </section>
+
+
+
+    <section id="yhteys" class="row">
+        <h1>YHTEYDENOTTO</h1>
+
+        <div class="column">
+            <a href="mailto:maarit.magga@myy.haaga-helia.fi">
+                <img src="EmailKuvake.png" alt="Email kuvake"></a>
+        </div>
+
+        <div class="column">
+            <a href="https://www.linkedin.com/in/maaritmagga" target="blank">
+                <img src="LinkedInKuvake.png" alt="Linkedin kuvake"></a>
+        </div>
+    </section>
+
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><b> ^ </b></button>
+    <script> 
+        let mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0; 
+        }</script>
+
+
+
+    <footer>
+        <p>Copyright - Maggis</p>
+    </footer>
+</body>
+
+</html>
